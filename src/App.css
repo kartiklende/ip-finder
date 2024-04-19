@@ -1,0 +1,55 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4rem);
+}
+
+.left {
+  padding: 2rem;
+  border-right: 2px solid #333;
+}
+
+.left h4 {
+  font-size: 1.5rem;
+}
+
+#ip {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.left {
+  background: linear-gradient(45deg, rgba(29, 29, 29, 0.938) 40%, rgba(39, 1, 1, 0.959) 80%);
+  padding: 2rem;
+  border-right: 2px solid #333;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  5% { transform: translate(-2px, 2px) skew(-5deg); }
+  10% { transform: translate(-2px, -2px) skew(5deg); }
+  15% { transform: translate(2px, 2px) skew(5deg); }
+  20% { transform: translate(2px, -2px) skew(-5deg); }
+  25% { transform: translate(0); }
+  100% { transform: translate(0); }
+}
+
+.glitch {
+  animation: glitch 0.1s infinite;
+}
